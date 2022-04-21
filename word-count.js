@@ -1,10 +1,10 @@
-export function count(input: string): Map<string, number> {
+export function count(input) {
   const inputArray = input
     .toLowerCase()
     .replace(/\n/m, " ")
     .replace(/\t/m, " ")
     .split(" ");
-  const inputMap = new Map<string, number>();
+  const inputMap = new Map();
 
   for (const each of inputArray) {
     if (each === "") {
